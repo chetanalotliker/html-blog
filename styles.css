@@ -1,0 +1,21 @@
+.logo {
+    width: 20%;
+}
+
+main { 
+float: center;
+}
+
+body{
+    background-color: lightyellow;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: sandybrown;
+    color: white;
+    text-align: center;
+ }

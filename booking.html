@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Star Gold Shine</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <meta property="og:title" content="Our Menu">
+        <meta property="og-type" content="website">
+        <meta property="og-image" content="images/logo.png">
+        <meta property="og:url" content="https://chetanalotliker.github.io/learn-html-css-javascript/menu-bootstrap.html">
+        <meta property="og:description" content="Star Gold Shine is a faily owned restaurant">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Star Gold Shine">
+
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png" class="logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="https://chetanalotliker.github.io/learn-html-css-javascript/menu-bootstrap.html">Menu</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Book a table</h1>
+            <form method="POST">
+                <fieldset id="size">
+                    <label>
+                        <input type="radio" value="2" name="size">2 Person table
+                    </label>
+                    <label>
+                        <input type="radio" value="4" name="size" checked>4 Person table
+                    </label>
+                    <label>
+                        <input type="radio" value="6" name="size" checked>6 Person table
+                    </label> 
+                </fieldset>
+                <br>
+                <fieldset id="location">
+                    <label>
+                        <input type="radio" value="indoors" name="location" checked>Indoors
+                    </label>
+                    <label>
+                        <input type="radio" value="outdoors" name="location">Outdoors
+                    </label>
+                </fieldset>
+                <br>
+                <div>
+                    <label for="booking_date">Booking Date</label><br>
+                    <input type="date" id="booking_date" name="booking_date">
+                </div>
+                <br>
+                <div>
+                    <label for="booking_range">Number of People</label><br>
+                    <input type="range" id="booking_range" name="booking_range" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                    <output>4</output>
+                </div>
+                <br>
+                <div>
+                    <label for="booking_location"></label>
+                    <input id="booking_location" name="booking_location" list="locations">
+                    <datalist id="locations">
+                        <option value="Downtown"></option>
+                        <option value="Uptown"></option>
+                    </datalist>
+                </div>
+                <br>
+                <button type="submit">Book Table</button>
+            </form>
+        </main>
+        <div class="footer">
+            <p>Star Gold Shine</p>
+        </div>
+    </body>
+</html>
